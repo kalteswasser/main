@@ -1,0 +1,22 @@
+/*    START JON STYLES
+---------------------------------- */
+
+/* Exemple */
+#primary-menu li ul li.picto-customerjourney {
+  background: url(img/Picto_CustomerJourneyMap.png) no-repeat 0 50% / 28px 28px;
+}
+
+#primary-menu li ul li.picto-feedback {
+  background: url(img/Picto-Feedback.png) no-repeat 0 50% / 28px 28px;
+}
+
+.jobdesc {
+	text-transform: uppercase;
+	color: #0756FE !important;
+	font-size: 12px !important;
+	padding-top: 10px;
+}
+
+
+/*    END JON STYLES
+---------------------------------- */

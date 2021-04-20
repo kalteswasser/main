@@ -1,0 +1,151 @@
+/*!
+Theme Name: evolt
+Theme URI: http://underscores.me/
+Author: evolt
+Author URI: https://evolt.io
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: evolt
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+evolt is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+#primary-menu li {
+  white-space: nowrap;
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  #masthead .col4-medium {
+    grid-column: auto/span 3;
+  }
+  
+  #masthead .col6-medium {
+    grid-column: auto/span 6;
+  }
+}
+
+#main .blog-list .alm-reveal {
+  margin-bottom: 4rem !important;
+}
+
+.single .bloc-card {
+  border: 1px solid #E0E5E9;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.single .bloc-card .visuel {
+  height: 236px;
+  width: 236px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-right: 30px;
+}
+
+.single .bloc-card .visuel img {
+  width: 100%;
+  height: auto;
+}
+
+.single .bloc-card .text {
+  width: calc(100% - 270px);
+}
+
+.single .bloc-card .text h3 {
+  font-size: 28px;
+  line-height: 31px;
+  margin: 0 0 10px;
+
+}
+
+
+.single .bloc-card .text p {
+  font-size: 18px;
+  color: #52556F;
+  margin: 0 0 15px;
+}
+
+.single .bloc-card .text .link {
+  font-size: 16px;
+  display: block;
+}
+
+.single .bloc-card .text .link a {
+  background: #1E2969;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  display: inline-block;
+  vertical-align: middle;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  padding: 0 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: opacity .2s ease;
+}
+
+.single .bloc-card .text .link a:hover,
+.single .bloc-card .text .link a:focus {
+  opacity: .8;
+}
+
+.single .bloc-card .text .link a:after {
+  display: none;
+}
+
+@media( max-width: 768px ) {
+  .single .bloc-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;  
+    align-items: center;
+  }
+
+  .single .bloc-card .visuel,
+  .single .bloc-card .text {
+    width: 100%;
+  }
+
+  .single .bloc-card .visuel {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+
+@media( min-width: 769px ) {
+  .single .bloc-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;  
+    align-items: center;
+  }
+} 
+
+video::-webkit-media-controls-panel {
+  background-image: none !important;
+}
